@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="auth-forms">
+        <h2>Log In</h2>
+        
+        <form ng-submit="login()">
+          <p ng-show="error" class="text-danger">{{ error }}</p>
+          <input type="email" ng-model="user.email" placeholder="Email" class="form-control"><br>
+          <input type="password" ng-model="user.password" placeholder="Password" class="form-control"><br>
+          <input type="submit" value="Log in" class="btn btn-primary" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body
+{
+    background: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_5287d4367585d_1.JPG') fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+</style>
